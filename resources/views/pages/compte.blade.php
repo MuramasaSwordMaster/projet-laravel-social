@@ -1,4 +1,4 @@
-@extends("defaut2")
+@extends("defaut")
 
 @section('contenu')
 <div id="corps-conteneur">
@@ -38,10 +38,12 @@
         <div class="form-group">
         <div class="row">
                 <div class="col-6">
-                  <input type="text" class="form-control" placeholder="Prénom">
+                    <label for="">Prénom :</label>
+                <input type="text" class="form-control" placeholder="{{$personne->prenom}}">
                 </div>
                 <div class="col-6">
-                  <input type="text" class="form-control" placeholder="Nom">
+                    <label for="">Nom :</label>
+                  <input type="text" class="form-control" placeholder="{{$personne->nom}}">
                 </div>
                
               </div>
@@ -49,10 +51,12 @@
         <div class="form-group">
               <div class="row">
                     <div class="col-6">
-                      <input type="text" class="form-control" placeholder="Adresse mail">
+                        <label for="">Mail :</label>
+                      <input type="text" class="form-control" placeholder="{{$personne->mail}}">
                     </div>
                     <div class="col-6">
-                      <input type="text" class="form-control" placeholder="Téléphone">
+                        <label for="">Téléphone :</label>
+                      <input type="text" class="form-control" placeholder="{{$personne->telephone}}">
                     </div>
                    
                   </div>
@@ -60,14 +64,30 @@
                 <div class="form-group">
                         <div class="row">
                               <div class="col-6">
-                                <input type="text" class="form-control" placeholder="Adresse physique">
+                                  <label for="">Adresse :</label>
+                                <input type="text" class="form-control" placeholder="{{$personne->adresse}}">
                               </div>
                               <div class="col-6">
-                                <input type="date" class="form-control" >
+                                  <label for="">Ville :</label>
+                                <input type="text" class="form-control" placeholder="{{$personne->ville}}">
                               </div>
                              
                             </div>
                           </div>
+                          <div class="form-group">
+                            <div class="row">
+                                  <div class="col-6">
+                                      <label for=""  >Code postal :</label>
+                                    <input type="text" class="form-control" placeholder="{{$personne->codepostal}}">
+                                  </div>
+              
+                                  <div class="col-6">
+                                      <label for="">Naissance :</label>
+                                    <input type="date" class="form-control"  placeholder="{{$personne->naissance}}">
+                                  </div>
+                                 
+                                </div>
+                              </div>
 </form>
                        </div>
                       </div>

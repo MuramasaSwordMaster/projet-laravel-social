@@ -1,4 +1,4 @@
-@extends("defaut2")
+@extends("defaut")
 
 @section('contenu')
 <div id="corps-conteneur">
